@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "verify-go": "go version | grep -q 'go1.19' || (echo 'Error: Go 1.19 is required' && exit 1)",
+    "prebuild": "npm run verify-go",
     "start": "next start",
     "lint": "next lint"
   },
