@@ -1,10 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "out"  # or your framework's output directory
-
+  publish = "out"
+  
 [build.environment]
-  GO_VERSION = "1.19"  # Sets Go version for Netlify
-
-# Install Go in Netlify's build environment
-[[plugins]]
-  package = "@netlify/plugin-go"
+  GO_VERSION = "none" # Explicitly disable Go
