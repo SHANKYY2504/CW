@@ -1,11 +1,11 @@
-import Image from "next/image";
+
 import { navItems } from "@/data";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Shortfilm from "@/components/Shortfilm";
 import Skeleton from "@/components/Skeleton";
-import Events from "@/components/Events";
+
 import Workshop from "@/components/Workshop";
 import Crew from "@/components/Crew";
 import Members from "@/components/Members";
