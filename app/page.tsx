@@ -22,7 +22,7 @@ export default function Home() {
       <About />
       <Shortfilm/>
       <Skeleton />
-      <Events />
+      {/* <Events /> */}
       <Workshop />
       <Crew />
       <Members />
