@@ -39,7 +39,7 @@ const Contact = () => {
             >
               <FaMapSigns className="text-4xl text-gray-400 mb-3" />
               <h3 className="text-xl font-semibold">Email</h3>
-              <p className="text-gray-400 mt-2 text-lg">Cinewave@gmail.com</p>
+              <p className="text-gray-400 mt-2 text-lg">Secycinesoc.sg@iitbbs.ac.in</p>
             </motion.div>
 
             <motion.div

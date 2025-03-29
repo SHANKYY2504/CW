@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useRef } from "react";
-import Image from "next/image"; // Add this import
+import Image from "next/image";
 
 const imagePaths = ["/e1.jpg", "/e2.jpg", "/e3.jpg", "/e4.jpg", "/e5.jpg", "/e6.jpg", "/e7.jpg",
   "/e8.jpg", "/e9.jpg", "/e10.jpg", "/e11.jpg", "/e12.jpg", "/e13.jpg", "/e14.jpg"
@@ -64,7 +64,7 @@ const Heronew = () => {
     
     return (
       <div 
-        className="relative bg-gray-900 overflow-hidden shadow-lg flex-shrink-0 border border-yellow-500/30 mt-[20px]"
+        className="relative bg-gray-900 overflow-hidden shadow-lg flex-shrink-0 mt-[20px]"
         style={{
           width: `${frameWidth}px`,
           height: `${frameHeight}px`,
@@ -101,6 +101,10 @@ const Heronew = () => {
       </div>
     )
   }
+
+  // Create a much longer array of images for the filmstrips
+  const longImageArray = [...imagePaths, ...imagePaths, ...imagePaths, ...imagePaths, 
+                         ...imagePaths, ...imagePaths, ...imagePaths, ...imagePaths];
 
   return (
     <>
@@ -144,13 +148,13 @@ const Heronew = () => {
       <main className="min-h-screen bg-black text-white overflow-hidden">
         <div className="relative h-screen flex flex-col justify-between py-10 md:py-20">
           {/* Top Film Strip */}
-          <div className="relative h-[100px] md:h-[140px] w-full overflow-hidden border-y border-yellow-500/30 mt-4 md:mt-10">
+          <div className="relative h-[100px] md:h-[140px] w-full overflow-hidden mt-4 md:mt-10">
             <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black z-10 pointer-events-none" />
             <div 
               ref={topFilmstripRef} 
               className="flex h-full items-center absolute left-0 will-change-transform"
             >
-              {[...imagePaths, ...imagePaths].map((path, i) => (
+              {longImageArray.map((path, i) => (
                 <FilmFrame key={`top-${i}`} imagePath={path} />
               ))}
             </div>
@@ -171,13 +175,13 @@ const Heronew = () => {
           </div>
 
           {/* Bottom Film Strip */}
-          <div className="relative h-[100px] md:h-[140px] w-full overflow-hidden border-y border-yellow-500/30 mb-4 md:mb-10">
+          <div className="relative h-[100px] md:h-[140px] w-full overflow-hidden mb-4 md:mb-10">
             <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black z-10 pointer-events-none" />
             <div 
               ref={bottomFilmstripRef} 
               className="flex h-full items-center absolute left-0 will-change-transform"
             >
-              {[...imagePaths, ...imagePaths].reverse().map((path, i) => (
+              {longImageArray.reverse().map((path, i) => (
                 <FilmFrame key={`bottom-${i}`} imagePath={path} />
               ))}
             </div>

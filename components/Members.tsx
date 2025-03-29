@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Members = () => {
-  const images = ["member3.jpg", "memberp2.jpg"]; // Add more images as needed
+  const images = ["member3.jpg", "memberp1.jpg"]; // Add more images as needed
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

@@ -34,7 +34,7 @@ const Workshop = () => {
             <Card
               title="Editing workshop"
               icon={<AceternityIcon order="Editing" />}
-              description="Unlock the power of words and craft compelling narratives in our Writing Workshop! Learn storytelling techniques, sharpen your writing skills, and bring your ideas to life. Join us for an interactive session filled with creativity, insights, and hands-on exercises!"
+              description="Master the art of post-production in this hands-on workshop. Learn essential editing techniques, from cutting scenes to sound design and color grading, to transform raw footage into a polished, compelling film."
             >
               <CanvasRevealEffect
                 animationSpeed={5.1}
@@ -44,7 +44,7 @@ const Workshop = () => {
             <Card
               title="Scriptwriting workshop"
               icon={<AceternityIcon order="Scriptwriting" />}
-              description="Unlock the power of words and craft compelling narratives in our Writing Workshop! Learn storytelling techniques, sharpen your writing skills, and bring your ideas to life. Join us for an interactive session filled with creativity, insights, and hands-on exercises!"
+              description="Unleash your storytelling potential! This workshop will guide you through the essentials of scriptwriting, including plot development, character arcs, and dialogue, helping you craft engaging and impactful screenplays."
             >
               <CanvasRevealEffect
                 animationSpeed={3}
@@ -60,7 +60,7 @@ const Workshop = () => {
             <Card
               title="Acting workshop"
               icon={<AceternityIcon order="Acting" />}
-              description="Unlock the power of words and craft compelling narratives in our Writing Workshop! Learn storytelling techniques, sharpen your writing skills, and bring your ideas to life. Join us for an interactive session filled with creativity, insights, and hands-on exercises!"
+              description="Step into the spotlight and bring characters to life! This workshop focuses on voice modulation, expressions, body language, and improvisation to enhance your acting skills and confidence on stage and screen"
             >
               <CanvasRevealEffect
                 animationSpeed={3}
@@ -71,7 +71,7 @@ const Workshop = () => {
             <Card
               title="Cinematography workshop"
               icon={<AceternityIcon order="Cinematography" />}
-              description="Unlock the power of words and craft compelling narratives in our Writing Workshop! Learn storytelling techniques, sharpen your writing skills, and bring your ideas to life. Join us for an interactive session filled with creativity, insights, and hands-on exercises!"
+              description="Dive into the world of visual storytelling! This workshop will explore the fundamentals of camera techniques, lighting, framing, and shot composition to enhance your filmmaking skills and bring your creative vision to life."
             >
               <CanvasRevealEffect
                 animationSpeed={4}

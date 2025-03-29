@@ -12,8 +12,7 @@ const Skeleton = () => {
             Projects
           </h1>
           <p className="text-center font-normal text-gray-500 text-sm sm:text-base max-w-2xl mt-4 sm:mt-8 px-4 sm:px-8 mx-auto">
-            Some of our finest work, brought to life by a passionate and dedicated
-            team, both on and off the screen.
+          Inside IIT Bhubaneswar – Life, Fun, and Unfiltered Stories Like Never Before!
           </p>
         </div>
 
@@ -50,38 +49,38 @@ const Skeleton = () => {
 
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "Freshers unfiltered",
+    description: "Get to know the freshers as they answer spontaneous questions about their lives, interests, and fun facts",
     videoUrl: "https://www.youtube.com/embed/VGxJaunHDe4", 
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "Farewell, But Not Goodbye",
+    description: "Relive the beautiful journey from the first year to the final goodbye in this emotional graduation video",
     videoUrl: "https://www.youtube.com/embed/WLJZRiPHLRY",
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: " The Graduation Chronicles",
+    description: "Graduation and Memories Celebrating the laughter, friendships, and milestones of the graduating students as they bid farewell to college life",
     videoUrl: "https://www.youtube.com/embed/P9K19ZyOVZk",
   },
   {
-    title: "The Power of Communication",
-    description: "Understand the impact of effective communication in our lives.",
+    title: "64 Questions with IITians",
+    description: "Everything You Need to Know About IIT Life. Get candid answers from seniors as they share insights, tips, and fun facts about life at IIT.",
     videoUrl: "https://www.youtube.com/embed/Fm_-6GilOG0",
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
+    title: "Fresher's video'23",
+    description: "spontaneous questions about freshers life, interest and campus",
     videoUrl: "https://www.youtube.com/embed/asQvwclqL0M",
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
+    title: "The Ultimate Campus Tour",
+    description: "An immersive tour showcasing the beauty, facilities, and charm of the college campus",
     videoUrl: "https://www.youtube.com/embed/4Umuj7GWdLA",
   },
   {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
+    title: "Convocation'22",
+    description: "Embark on exciting journeys .",
     videoUrl: "https://www.youtube.com/embed/nlIRAvQamFo",
   },
 ];
