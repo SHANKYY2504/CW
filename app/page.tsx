@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Shortfilm from "@/components/Shortfilm";
 import Skeleton from "@/components/Skeleton";
+import Events from "@/components/Events";
 
 import Workshop from "@/components/Workshop";
 import Crew from "@/components/Crew";
@@ -21,7 +22,7 @@ export default function Home() {
       <About />
       <Shortfilm/>
       <Skeleton />
-      {/* <Events /> */}
+      <Events />
       <Workshop />
       <Crew />
       <Members />
