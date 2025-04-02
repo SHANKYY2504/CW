@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const Workshop = () => {
   return (
@@ -83,11 +84,54 @@ const Workshop = () => {
               />
             </Card>
           </div>
+
+          {/* Highlight strip at bottom with yellow color and reduced size */}
+          <div className="w-full max-w-2xl mx-auto mt-8 px-4">
+            <HighlightStrip 
+              text="Workshop resources coming soon!" 
+              className="w-full bg-yellow-500 p-2"
+            />
+          </div>
         </section>
       </div>
     </section>
   );
 };
+
+interface HighlightStripProps {
+  text?: string;
+  className?: string;
+}
+
+function HighlightStrip({ text = "Resources dropping soon", className }: HighlightStripProps) {
+  const [position, setPosition] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPosition((prev) => (prev >= 100 ? -20 : prev + 1));
+    }, 30);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div
+      className={cn(
+        "relative overflow-hidden rounded-lg p-3 text-center font-medium text-white shadow-lg",
+        className,
+      )}
+    >
+      
+      <div
+        className="absolute inset-0 w-12 translate-x-[-50%] bg-gradient-to-r from-transparent via-white/60 to-transparent"
+        style={{ left: `${position}%`, transition: "left 0.1s ease" }}
+      />
+
+     
+      <div className="relative z-10 text-sm md:text-base lg:text-lg">{text}</div>
+    </div>
+  );
+}
 
 interface CardProps {
   title: string;

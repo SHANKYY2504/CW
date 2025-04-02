@@ -5,7 +5,7 @@ export const navItems = [
     // { name: "Event", link: "#event" },
     { name: "Workshop", link: "#workshop" },
     { name: "Crew", link: "#crew" },
-    { name: "Contact us ", link: "#contactus" },
+    { name: "Contacts ", link: "#contactus" },
    
     
   ];

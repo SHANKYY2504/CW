@@ -6,7 +6,7 @@ const Skeleton = () => {
   return (
     <section id="reel">
       <div className="flex flex-col items-center p-4 sm:p-6 w-full min-h-screen bg-black overflow-hidden relative pt-24 md:pt-40">
-        {/* Text content with higher z-index */}
+       
         <div className="relative z-10 w-full text-center">
           <h1 className="uppercase text-bold text-3xl sm:text-4xl md:text-5xl text-center text-yellow-500 font-bold drop-shadow-[0_0_4px_rgba(255,255,0,0.4)] mb-4 sm:mb-6">
             Projects
