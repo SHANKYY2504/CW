@@ -11,6 +11,7 @@ import Workshop from "@/components/Workshop";
 import Crew from "@/components/Crew";
 import Members from "@/components/Members";
 import Contact from "@/components/Contact";
+import Eve from "@/components/Eve";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Shortfilm/>
       <Skeleton />
       {/* <Events /> */}
+      {/* <Eve /> */}
       <Workshop />
       <Crew />
       <Members />

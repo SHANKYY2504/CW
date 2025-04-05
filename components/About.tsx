@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+
 const About: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -72,13 +73,15 @@ const About: React.FC = () => {
 
             <div className="w-full lg:w-1/2 flex justify-center mt-0 lg:mt-[-30px]">
               <Image 
-                src="/abouta.png" 
+                src="/aboutu.png" 
                 alt="cine" 
-                width={350} 
-                height={400}
+                width={450} 
+                height={700}
                 className="w-[250px] sm:w-[300px] md:w-[350px]"
               />
             </div>
+
+             
           </div>
         </motion.div>
 

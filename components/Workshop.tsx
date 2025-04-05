@@ -41,6 +41,7 @@ const Workshop = () => {
                 animationSpeed={5.1}
                 containerClassName="bg-emerald-900"
               />
+              
             </Card>
             <Card
               title="Scriptwriting workshop"
